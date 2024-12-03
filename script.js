@@ -70,8 +70,8 @@ function Run() {
         positions[index].y === divSize.height - ballSize &&
         positions[index].x === divSize.width - ballSize
       ) {
-        positions[index].x = divSize.width;
-        positions[index].y = divSize.height;
+        positions[index].x = divSize.width - ballSize;
+        positions[index].y = divSize.height - ballSize;
       }
       object.style.top = positions[index].y + "px";
       object.style.left = positions[index].x + "px";
